@@ -12,7 +12,7 @@ public class GreetingsServiceImpl implements GreetingsService {
 
     @Override
     public Greetings getGreetings(@Header("name") String name ) {
-        return new Greetings( THE_GREETINGS + ", " + name );
+        return new Greetings( THE_GREETINGS + name );
     }
 
 }
